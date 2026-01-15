@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Blanca</title>
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="crespi_blanca.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ARCHIVO_BCV</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" id="btn-sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="pantalla inicio">
+        <img src="img/IMG_7942.JPG" class="portada-img">
+        <h1 class="portada-titulo">
+            Archivo - Blanca 
+            <br>
+            Crespi de Valldaura
+        </h1>
+    </section>
+
+
+    
+    <!--  SOBRE MÍ -->
+    <div id="modal-sobre-mi" class="modal-sobre-mi oculto">
+        <div class="modal-contenido">
+            <h2>A cerca de mi...</h2>
+            <p>Me llamo Blanca, soy de Madrid y soy de una familia muy numerosa. Somos 9 en casa, 10 contando con el perrete y 11 si añadimos al gato. Convivir con tanta gente me encanta, es fascinante y divertidísimo. 
+
+            Otro dato, sería que amo la artesanía. Las cosas hechas lentamente, con paciencia y cuidado. Me gusta muchísimo observar este tipo de objetos y me encantaría formarme y convertirme en una artesana.
+
+            El diseño - otro de mis vicios. Por suerte, lo que estudio. Me encanta ver como el diseño de objetos bellos y funcionales transforma el modo en que las personas se relacionan. 
+
+            Amo la música, el cine, hacer fotos y grabar lo que veo para luego ponerle una canción cuidadosamente seleccionada... y que quede épica.
+                
+            Por último, para mi abuelo soy “Blanquita la silenciosa”; no porque no tenga nada que decir, sino porque tengo mucho que observar.
+            <br>    
+            Así que, sin más preámbulos, presento mis proyectos: una manera de compartir todo lo que aprendo observando a la gente que me rodea y los objetos que los acompañan.
+            </p>
+            <button id="cerrar-sobre-mi" class="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section id="proyectos" class="pantalla proyectos">
+    <h2 class="titulo-seccion">Proyectos</h2>
+
+    <div class="carrusel-contenedor">
+        <button class="flecha izq" data-target="carrusel">‹</button>
+
+        <div class="carrusel" id="carrusel">
+            <img src="img/mse4.png" class="mini" data-texto="Proyecto 1">
+            <img src="img/mse3.png" class="mini" data-texto="Proyecto 2">
+            <img src="img/mse1.png" class="mini" data-texto="Proyecto 3">
+            <img src="img/mse2.png" class="mini" data-texto="Proyecto 4">
+            <img src="img/mse5.png" class="mini" data-texto="Proyecto 5">
+            <img src="img/lam0.jpg" class="mini" data-texto="Proyecto 6">
+            <img src="img/lam1.png" class="mini" data-texto="Proyecto 7">
+            <img src="img/lam2.png" class="mini" data-texto="Proyecto 8">
+            <img src="img/lam3.JPEG" class="mini" data-texto="Proyecto 9">
+            <img src="img/lam4.JPEG" class="mini" data-texto="Proyecto 10">
+            <img src="img/lam5.JPEG" class="mini" data-texto="Proyecto 11">
+            <img src="img/lam6.JPEG" class="mini" data-texto="Proyecto 12">
+            <img src="img/farol1.png" class="mini" data-texto="Proyecto 13">
+            <img src="img/farol2.png" class="mini" data-texto="Proyecto 14">
+            <img src="img/farol3.JPEG" class="mini" data-texto="Proyecto 15">
+            <img src="img/IMG_4892.JPG" class="mini" data-texto="Proyecto 16">
+            <img src="img/Mini Birra Render.27.jpg" class="mini" data-texto="Proyecto 17">
+            <img src="img/Mini Birra Render.29.jpg" class="mini" data-texto="Proyecto 18">
+            <img src="img/Mini Birra Render.35.jpg" class="mini" data-texto="Proyecto 19">
+            <img src="img/ajedrez.jpeg" class="mini" data-texto="Proyecto 20">
+            <img src="img/papel0.jpeg" class="mini" data-texto="Proyecto 21">
+            <img src="img/papel1.jpeg" class="mini" data-texto="Proyecto 22">
+            <img src="img/ajedrez.jpeg" class="mini" data-texto="Proyecto 23">
+            <img src="img/mse6.jpeg" class="mini" data-texto="Proyecto 24">
+            <img src="img/mse7.jpeg" class="mini" data-texto="Proyecto 25">
+            <img src="img/mse8.jpg" class="mini" data-texto="Proyecto 26">
+            <img src="img/mse9.JPG" class="mini" data-texto="Proyecto 27">
+            <img src="img/mse10.JPEG" class="mini" data-texto="Proyecto 28">
+        </div>
+        
+        <button class="flecha der" data-target="carrusel">›</button>
+    </div>
+        <!-- VISOR GRANDE -->
+    <div id="visor" class="visor oculto">
+        <img id="visor-img">
+        <p id="visor-texto"></p>
+        <button id="cerrar">Cerrar</button>
+    </div>
+    </section>
+
+
+
+    <!-- SECCIÓN FOTOGRAFÍAS -->
+    <section id="fotografias" class="pantalla fotografias">
+    <h2 class="titulo-seccion">Fotografías hechas con la cámara de mi abuela</h2>
+
+    <div class="carrusel-contenedor">
+        <button class="flecha izq" data-target="carrusel2">‹</button>
+
+        <div class="carrusel" id="carrusel2">
+            <img src="img/carrusel2_0.JPG" class="mini foto" data-texto="Fotografía 1">
+            <img src="img/carrusel2_1.JPG" class="mini foto" data-texto="Fotografía 2">
+            <img src="img/carrusel2_2.JPG" class="mini foto" data-texto="Fotografía 3">
+            <img src="img/carrusel2_3.JPG" class="mini foto" data-texto="Fotografía 4">
+            <img src="img/carrusel2_4.JPG" class="mini foto" data-texto="Fotografía 5">
+            <img src="img/carrusel2_5.JPG" class="mini foto" data-texto="Fotografía 6">
+            <img src="img/carrusel2_6.JPG" class="mini foto" data-texto="Fotografía 7">
+            <img src="img/carrusel2_7.JPG" class="mini foto" data-texto="Fotografía 8">
+            <img src="img/carrusel2_8.JPEG" class="mini foto" data-texto="Fotografía 9">
+            <img src="img/carrusel2_9.JPEG" class="mini foto" data-texto="Fotografía 10">
+            <img src="img/carrusel2_10.JPEG" class="mini foto" data-texto="Fotografía 11">
+            <img src="img/carrusel2_11.JPEG" class="mini foto" data-texto="Fotografía 12">
+            <img src="img/carrusel2_12.JPEG" class="mini foto" data-texto="Fotografía 13">
+            <img src="img/carrusel2_13.JPG" class="mini foto" data-texto="Fotografía 14">
+            <img src="img/carrusel2_14.JPG" class="mini foto" data-texto="Fotografía 15">
+            <img src="img/carrusel2_15.JPG" class="mini foto" data-texto="Fotografía 16">
+            <img src="img/carrusel2_16.JPG" class="mini foto" data-texto="Fotografía 17">
+            <img src="img/carrusel2_17.JPG" class="mini foto" data-texto="Fotografía 18">
+            <img src="img/carrusel2_18.JPG" class="mini foto" data-texto="Fotografía 19">
+        </div>
+        
+        <button class="flecha der" data-target="carrusel2">›</button>
+    </div>
+    </section> <!-- VISOR GRANDE (y va con el d proyectos) -->
+
+
+    
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="pantalla">
+        <h2>Contacto</h2>
+        <br>
+        <p>Instagram: crespiblanca</p>
+        <p>Correo Electrónico: crespiblanca10@gmail.com</p>
+        <p>Tel.: 722651140</p>
+    </section>
+
+
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Tu JS -->
+    <script src="crespi_blanca.js"></script>
+
+</body>
+</html>
